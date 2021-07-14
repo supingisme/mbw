@@ -2,7 +2,10 @@
 NAME=mbw
 TARFILE=${NAME}.tar.gz
 
-mbw: mbw.c
+CC=aarch64-unknown-nto-qnx7.0.0-gcc
+
+qnx:
+	$(CC) $(CFLAGS)  mbw.c -o mbw 
 
 clean:
 	rm -f mbw

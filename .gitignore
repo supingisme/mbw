@@ -1,0 +1,17 @@
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects
+*.dll
+*.so
+*.so.*
+
+# pinfo
+*.pinfo
+
+# Executables
+mbw

@@ -69,6 +69,10 @@ void usage()
     printf("\nThe default is to run all tests available.\n");
 }
 
+void* mempcpy(void* dst, const void* src, size_t n) {
+  return memcpy(dst, src, n) + n;
+}
+
 /* ------------------------------------------------------ */
 
 /* allocate a test array and fill it with data
